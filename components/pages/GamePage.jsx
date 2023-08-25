@@ -8,7 +8,9 @@ function GamePage({ themes, user }) {
         <h3>Привет {user.name}!</h3>
         {themes.map((themesObj) => (
           <div key={themesObj.id}>
-            <h3>{themesObj.title}</h3>
+            <h3>
+              <a href={`/game/${themes.id}`}>{themesObj.title}</a>
+            </h3>
           </div>
         ))}
       </div>
