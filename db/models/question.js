@@ -30,6 +30,7 @@ module.exports = (sequelize, DataTypes) => {
           key: 'id',
         },
         onDelete: 'cascade',
+      },
     },
     {
       sequelize,
